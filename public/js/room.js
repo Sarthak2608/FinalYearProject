@@ -202,7 +202,6 @@ continueButt.addEventListener('click', () => {
     overlayContainer.style.visibility = 'hidden';
     document.querySelector("#myname").innerHTML = `${username} (You)`;
     socket.emit("join room", roomid, username);
-
 })
 
 nameField.addEventListener("keyup", function (event) {
